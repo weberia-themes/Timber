@@ -1,15 +1,21 @@
 [
   {
     "name": "theme_info",
+    "theme_name": "fork-timber theme",
+    "theme_version": "1.0.0",
+    "theme_author": "Weberia",
+    "theme_documentation_url": "https://github.com/Shopify/starter-theme",
+    "theme_support_url": "https://github.com/Shopify/starter-theme/issues",
+
     "logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/0070\/7032\/files\/2010_6_23_Shopify-Green_256x256.jpg",
     "settings": [
       {
         "type": "header",
-        "content": "Timber Framework"
+        "content": "fork-timber"
       },
       {
         "type": "paragraph",
-        "content": "v2.1.0"
+        "content": "v1.0.0"
       },
       {
         "type": "paragraph",
@@ -89,6 +95,23 @@
     ]
   },
   {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "font_picker",
+        "id": "font_heading",
+        "default": "helvetica_n4",
+        "label": "Headings"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_body",
+        "default": "helvetica_n4",
+        "label": "Body text"
+      }
+    ]
+  },
+  {
     "name": "Header",
     "settings": [
       {
@@ -134,6 +157,7 @@
       }
     ]
   },
+
   {
     "name": "Footer",
     "settings": [
@@ -161,7 +185,8 @@
       {
         "type": "checkbox",
         "id": "cart_notes_enable",
-        "label": "Enable cart notes"
+        "label": "Enable cart notes",
+        "default": true
       },
       {
         "type": "checkbox",
@@ -189,6 +214,50 @@
     "name": "Social media",
     "settings": [
       {
+        "type": "header",
+        "content": "Social sharing image"
+      },
+      {
+        "type": "image_picker",
+        "id": "share_image",
+        "label": "Image",
+        "info": "Shown when sharing a link on social media. [Learn more](https://help.shopify.com/manual/using-themes/troubleshooting/showing-social-media-thumbnail-images/) about image thumbnails."
+      },
+
+      {
+        "type": "header",
+        "content": "Social sharing options"
+      },
+      {
+        "type": "checkbox",
+        "id": "social_sharing_blog",
+        "label": "Enable sharing for blog articles",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "share_facebook",
+        "label": "Share on Facebook",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "share_twitter",
+        "label": "Tweet on Twitter",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "share_pinterest",
+        "label": "Pin on Pinterest",
+        "default": true
+      },
+
+      {
+        "type": "header",
+        "content": "Sharing links"
+      },
+      {
         "type": "text",
         "id": "social_twitter_link",
         "label": "Twitter URL",
@@ -199,6 +268,36 @@
         "id": "social_facebook_link",
         "label": "Facebook URL",
         "info": "https://www.facebook.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest_link",
+        "label": "Pinterest link"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "Instagram link"
+      },
+      {
+        "type": "text",
+        "id": "social_snapchat_link",
+        "label": "Snapchat link"
+      },
+      {
+        "type": "text",
+        "id": "social_tumblr_link",
+        "label": "Tumblr link"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube_link",
+        "label": "Youtube link"
+      },
+      {
+        "type": "text",
+        "id": "social_vimeo_link",
+        "label": "Vimeo link"
       }
     ]
   }
